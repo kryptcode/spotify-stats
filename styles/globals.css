@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-main bg-black text-white;
+    }
+}
+
+@layer components {
+    .nav-link {
+        @apply cursor-pointer  hover:text-green-400 hover:animate-pulse tracking-wide transition duration-200;
+    }
+    .home-btn {
+        @apply w-[50%] md:w-[40%] lg:w-[30%] py-1.5 bg-green-600 hover:scale-105 transition duration-200 ease-in-out text-xl font-semibold;
+    }
+}
